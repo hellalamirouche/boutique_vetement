@@ -1,0 +1,1842 @@
+/*
+Theme Name: OceanWP Child
+Theme URI: https://oceanwp.org/
+Template: oceanwp
+Author: Nick
+Author URI: https://oceanwp.org/about-me/
+Description: OceanWP is the perfect theme for your project. Lightweight and highly extendable, it will enable you to create almost any type of website such a blog, portfolio, business website and WooCommerce storefront with a beautiful &amp; professional design. Very fast, responsive, RTL &amp; translation ready, best SEO practices, unique WooCommerce features to increase conversion and much more. You can even edit the settings on tablet &amp; mobile so your site looks good on every device. Work with the most popular page builders as Elementor, Beaver Builder, Brizy, Visual Composer, Divi, SiteOrigin, etc... Developers will love his extensible codebase making it a joy to customize and extend. Best friend of Elementor &amp; WooCommerce. Looking for a Multi-Purpose theme? Look no further! Check the demos to realize that it's the only theme you will ever need: https://oceanwp.org/demos/
+Tags: two-columns,right-sidebar,footer-widgets,blog,news,custom-background,custom-menu,post-formats,rtl-language-support,sticky-post,editor-style,threaded-comments,translation-ready,buddypress,custom-colors,featured-images,full-width-template,theme-options,e-commerce
+Version: 1.6.7.1559826406
+Updated: 2019-06-06 15:06:46
+
+
+*/
+
+/* 
+==========================================================================
+LE CONTENEUR DES DIFFERENTES PAGES
+==========================================================================
+*/
+/* De l'accueil */
+#main{
+    padding-top:100px;
+    background: #8f8987;
+    
+}
+/* de la page blog single */
+.main_content_post_single{
+    background-color:#8f8987 !important;
+}
+/* de la page commande */
+.main_content_page_commande{
+    padding-top:0px !important;
+}
+
+.container{
+    max-width:100%;
+}
+/* de la page politique de confidentialité */
+.conteneur-politique-confidencialite{
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+/*
+ ==========================================================================
+LA SECTION HEADER
+==========================================================================
+*/
+
+#header-perso div{
+    max-width: 100vw;
+}
+
+/* 
+==========================================================================
+LA NAVBAR
+==========================================================================
+*/
+
+/* couleur de la nav */
+#site-header ,#site-header-inner{
+    padding: 5px 55px !important;
+    z-index: 999;
+    width: 100vw !important;
+}
+/* le padding de la nav */
+#site-header-inner{
+    padding: 5px 19px 5px 0px !important;
+}
+/* les liens de la nav */
+#menu-menu-principal li{
+    padding:8px !important;
+}
+/*effet de passage de la souris sur le header*/
+#site-header:hover{
+    background-color: rgba(64, 64, 64, 0.80)!important;
+}
+#content-wrap {
+     padding-top:0px !important;
+     width: 100vw;
+     margin: 0px auto;
+}
+/*icone du compte nav*/
+.icone_compte{
+    border-radius:20px;
+    background-color:white;
+}
+/*logo de la navbar*/
+#site-logo{
+    padding-left:50px;
+}
+#site-logo #site-logo-inner{
+    height:100px !important;
+}
+/*sticky top de la navbar*/
+.sticky{
+    position:fixed !important;
+    top:0px;
+    padding:0 7px;
+}
+#top-bar-wrap{
+    z-index: 9999;   
+}
+#site-navigation-wrap {
+    right: 0px;
+}
+#site-navigation-wrap .dropdown-menu>li>a{  
+    line-height:110px !important;
+}
+#site-header.transparent-header {
+    z-index:999;
+    background-color: rgba(64, 64, 64, 0.65) !important;
+}
+
+/* 
+ * le panier en submenu 
+*/
+
+/* panier vide */
+.spacious .owp-mini-cart p.woocommerce-mini-cart__empty-message {
+    color: white;
+}
+/* le panier non vide */
+.woocommerce-mini-cart__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0px;
+    width:100%;
+}
+.widget_shopping_cart_content .buttons .button {
+    float: left;
+    width: 100%;
+    padding: 14px 8px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+/* bouton paypal du menu panier qui contient des produits*/
+#woo_pp_ec_button{
+    display:block;
+    padding:10px 0px;
+    text-align:center;
+}
+/* centrer les éléments de la carte des produit panier non vide du menu*/
+.wcps-items-title a,.wcps-items-excerpt,.wcps-items-category a ,.wcps-items-tag a{
+    text-align: center !important;
+    display:block;
+}
+/* le titre du produit dans le panier du menu */
+.wcps-items-title a:hover{
+    color:rgb(4, 66, 14) !important;
+    font-size:1.2em !important; /* erreur w3c si je l'enlève à cause du slider qui contient un style: font-size vide*/
+}
+/* la description */
+.wcps-items-excerpt{
+    color:black !important;
+}
+/* la catégorie */
+.wcps-items-category a {
+    color:Brown !important;
+}.wcps-items-category a:hover{
+    color:black !important;
+}
+/* marque */
+.wcps-items-tag a:hover{
+    color:brown !important;
+}
+
+/* éloignement du titre du bord superieur au mouvemant */
+.wcps-items .layer-content{
+    padding-top:50px;
+}
+/* 
+==========================================================================
+LE FOOTER
+==========================================================================
+*/
+
+/* ajout de class perso dans footer.php et j'ajoute footer dans le theme enfant */
+.maClassFooter{
+    width: 100vw !important;
+}
+.text_bas_footer{
+    text-align:center;
+    padding: 10px 0 5px;
+    color: white;
+}
+.footer-lien a{
+    color:white;
+}
+/* news letter */
+#textNewsLetter div div div div h2{
+    line-height: 1.8em !important;
+    font-size: 16px;
+}
+.menu_footer_mentions{
+    float:none !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    width: 80% !important;
+}
+.menu_footer_mentions div ul li a:hover{
+    color:#ddac61 !important;
+}
+#copyright{
+    float: none !important;
+    text-align: center !important;
+    padding-right: 15px !important;
+    width: 100% !important;
+    padding-top: 5px !important;
+}
+#copyright a:hover{
+    color:#ddac61 !important;
+}
+
+/* le lien mon compte du footer */
+#link-compte-footer{
+    color:white !important;
+}
+/*
+ ==========================================================================
+LA PAGE ACCUEIL
+==========================================================================
+*/
+/* 
+ * le slider remise sur nos produits 
+*/
+.wcps-items{
+background-color:rgb(235, 252, 248) !important;
+}
+.wcps-items-price{
+    font-size:1.2em !important;/* erreur w3c si je l'enlève à cause du slider qui contient un style: font-size vide*/
+    text-align: center !important;
+}
+/* bouton ajouter au panier */
+.wcps-items-cart p  a{
+    width:100% !important;
+}
+
+/*
+ ==========================================================================
+LA PAGE BOUTIQUE
+==========================================================================
+*/
+
+
+/* suppression du padding de 100px si c'est la page boutique */
+.main_content_page_boutique_product_blog{
+    padding-top:0px !important;
+}
+
+.main_content_page_boutique_product_blog #content-wrap{
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+} 
+/* la div qui contient la barre de recherche sur la page boutique */
+#barre_recherche_shop {
+    padding:50px 20px 20px 20px;
+    margin-top:10px;
+    background-color:#352e2d !important;
+    margin-top:0px;
+} 
+/* titre en haut de la  page boutique lorseque on séléctionne la catégorie */
+.titre_selection_categorie{
+    margin-top:0px ;
+    text-align: center !important;
+    color:white;
+    font-size:2em;
+    padding-bottom:10px;
+}
+/* haut de page model ajouté avec élémentor */
+#haut_page_shop div {
+    margin: 0 auto !important;
+    width: 100%;
+}
+.oceanwp-toolbar{
+padding: 130px 20px 0px !important;
+background-color:#352e2d;
+border-color: #352e2d !important;
+}
+.oceanwp-toolbar .elementor-840{
+    margin:50px;
+}
+/* cacher le texte d'indication du genre de filtre apres appuie sur le filtre */
+.woof_products_top_panel{
+    display:none !important;
+}
+
+/* le filtre par defaut */
+.woocommerce-ordering{
+    float:right !important;
+}
+.woocommerce .woocommerce-ordering .orderby {
+    color: black;
+}
+/* largeur de trie par défaut */
+.theme-select .theme-selectInner{
+    width: 250px !important;
+}
+
+/* champs filtres sur la page boutique*/
+.oceanwp-off-canvas-filter,.woocommerce-ordering ,#oceanwp-grid,#oceanwp-list{
+    margin-top:20px !important;
+    margin-bottom:20px !important;
+    background-color:white !important; 
+    color:black !important;
+}
+/* la barre de recherche ajax en haut de la page boutique */
+#ajaxsearchlite1 {
+    margin:20px 25% ;
+    width:50%;
+}
+#ajaxsearchlite1 .probox, div.asl_w .probox{
+    border:2px solid #dbd6d6 !important;
+    padding: 4px 8px 8px !important;
+    height: 33px !important;
+}
+#ajaxsearchlite1 .probox .proinput input, div.asl_w .probox .proinput input {
+    font-size: 18px !important;
+}
+/* icone */
+div.asl_m .probox .promagnifier .innericon svg, div.asl_m .probox .prosettings .innericon svg, div.asl_m .probox .proloading svg {
+    width: 28px !important;
+    padding-top: 5px !important;
+    float:left;
+}
+/* le style du résultat de recherche ajax */
+.resultat_recherche_ajax {
+    padding: 150px 100px 25px !important;
+    background-color: white !important;
+}
+/* les boutons de filtre page boutique */
+
+.container_filtre{
+    width:100%;  
+}
+.ul_filtres{
+    width:70% ;
+    margin: 75px 15% 0px !important;
+    display:flex;
+    height:40px;
+    justify-content:space-around;
+    background: white;
+}
+
+/* mise en page des fiches produits dans boutique */
+#content .entry-content ul li{
+padding:0px;
+}
+/* apparence des fiches produits */
+.liste_produit_boutique li div{
+    width:300px !important;
+}
+.woocommerce ul.products li.product .woo-entry-image-swap{
+    width:100% !important;
+}
+/* La photo du produit en boutique */
+.image-wrap div a img{
+    width: 100% !important;
+    padding:0.3px 1px 0px  0px;
+}
+/* padding pour le conteneur de fiches produit de la page boutique */
+.conteneur_page_produit_simple div div div article div{
+    margin: 0px;
+    padding:50px 150px;
+}
+.woocommerce ul.products {
+    margin: 0px;
+    padding:50px 50px;
+}
+ul.page-numbers{
+    display:flex ;
+    width:100% !important;
+    justify-content: center;
+    padding:20px ;
+}
+/* les boutons de la  pagination */
+ul.page-numbers li a{
+    color:black !important;
+    background: white !important;
+}
+ul.page-numbers li a:hover{
+    color:white!important;
+    background: black !important;
+}
+/** bouton  active **/
+ul.page-numbers li span{
+    color:white !important;
+    background: brown !important;
+}
+.result-count{
+    float:none !important;
+    display: flex !important;
+    justify-content: center !important;
+    padding-top: 20px !important;
+    width: 100%;
+}
+/* bouton de nombre de produit au deçu de la boucle de produits */
+.result-count li.view-title {
+  color:white !important;
+}
+.result-count li a{
+    color:brown !important;
+  }
+  .result-count li a:hover{
+    color:white !important;
+  }
+  .oceanwp-toolbar .result-count{
+      padding-top:0px !important;
+  }
+
+/* 
+ * style colone latérale hors canevas (celle qui contienne les filtres de la boutique
+*/
+
+.oceanwp-off-canvas-sidebar{
+    padding:10px !important;
+}
+/*logo*/
+.oceanwp-off-canvas-sidebar #ocean_custom_header_logo-2 {
+    padding-bottom: 20px !important;
+}
+.oceanwp-off-canvas-sidebar #ocean_custom_header_logo-2 .custom-header-logo #site-logo{
+    padding-left:0px !important;   
+}
+
+/*catégories de produit */
+/**titres widget **/
+.widget-title{
+    color:white;
+    line-height: 20px;
+}
+.select2-container--default .select2-selection--single {
+    background-color: white !important;
+    border-radius: 0px !important;
+}
+.select2-container--default .select2-selection--single span {
+  color:black !important;
+}
+.select2-results__options{
+    background-color: #b45a25 !important;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: initial;   
+}
+/* widget marques */
+#pwb_filter_by_brand_widget-3{
+    background-color: black;
+    color:white;
+}
+#pwb_filter_by_brand_widget-3 h4{
+    color:white;
+    text-decoration-line: underline;
+    text-underline-position: under;
+}
+.pwb-hide-submit-btn ul li{
+   display:flex;
+   justify-content: flex-start;
+   width:100%;
+}
+.pwb-hide-submit-btn ul li label{
+   padding-left:25%;
+}
+/* filtre par prix */
+.price_slider_wrapper .price_slider .ui-slider-range{
+    background-color: rgb(166, 23, 23) !important;
+}
+/* produits consultés recemment et mieux notés */
+#woocommerce_recently_viewed_products-2 .product_list_widget ,#woocommerce_top_rated_products-2 .product_list_widget{
+    background-color: white;
+}
+#woocommerce_recently_viewed_products-2 .product_list_widget li a,#woocommerce_top_rated_products-2  .product_list_widget li a{
+    color: black;
+}
+#woocommerce_recently_viewed_products-2 .product_list_widget li a:hover,#woocommerce_top_rated_products-2  .product_list_widget li a:hover{
+    color: brown;
+}
+/* notre page facebook */
+.oceanwp-off-canvas-sidebar .the_champ_horizontal_counter #thechamphorizontalcounter-2{
+    padding-top:10px;
+}
+.oceanwp-off-canvas-sidebar .the_champ_horizontal_counter #thechamphorizontalcounter-2 .the_champ_sharing_ul{
+    display:flex;
+    justify-content: center;
+}
+
+
+/*
+ ==========================================================================
+LA PAGE CONNEXION ET INSCRIPTION
+==========================================================================
+*/
+
+/* formulaire de connexion */
+.mon_formulaire .u-columns .u-column1{
+    background-color: #977239;
+    color:white;
+    padding: 20px;
+}
+.mon_formulaire .u-columns .u-column1 form p input{
+    background-color: white;
+    color:black;
+}
+.text_login{
+    text-align:center;
+}
+.bas_login{
+    display:flex;
+    flex-direction: column;
+    margin-top:5px;
+}
+.bas_login .form-row{
+    display: flex !important;
+    flex-direction: column;
+}
+.bas_login .form-row label{
+    padding-bottom: 20px;
+    margin:0px !important;
+}
+/** bouton valider **/
+.bas_login .form-row button{
+    width:70%;
+    margin: 0 15%;
+}
+.bas_login .form-row button:hover{
+    color:black;
+}
+/** oublie du mot de passe **/
+.bas_login .lost_password {
+    line-height: 42px;
+    text-align: center;
+}
+.bas_login .lost_password a {
+    color:white;
+}
+.bas_login .lost_password a:hover {
+    color:green;
+}
+/* formulaire d'inscription */
+.mon_formulaire{
+    padding:0px 0px 25px;
+    margin-top:0px;
+}
+.mon_formulaire .owp-account-links li a{
+ font-size:1.5em !important;
+}
+.text-logo{
+    text-align: center;
+    padding:10px 0px;
+    text-transform: uppercase;
+    color:brown;
+    font-size: 2em;
+    margin-bottom:0px;
+}
+/* largeur du formulaire de connexion et d'inscription */
+#customer_login{
+    width:80%;
+    margin: 0 auto;
+}
+.mon_formulaire #customer_login .u-column2{
+    width:80% !important;
+    margin:0px;
+    padding:50px;
+    background-color:#977239;
+    color:white;
+}
+.mon_formulaire #customer_login .u-column2 form p label{
+   display:block;
+}
+.mon_formulaire #customer_login .u-column2 form p  input{
+    background-color:white;
+    color:black;  
+}
+/** bouton valider du formulaire d'insciption **/
+#customer_login .col-2 button {
+    width: 80% !important;
+    margin : 0 10%;
+}
+.mon_formulaire #customer_login .u-column2 form p  button:hover{
+    color:black;  
+}
+
+/** la boxe condtitions générales **/
+.wpmem-checkbox{
+    display:flex;
+}
+.wpmem-checkbox label a{
+    color:white;
+}
+
+/*
+ ==========================================================================
+LA PAGE CONNEXION EN administration
+==========================================================================
+/*
+/*
+####################
+Remarque : il ya du css dans le fichier function.php 
+#####################
+*/
+
+/* la section oublie password notamment le logo*/
+#logo_lost_password{
+    margin: 0 25% !important;
+    width: 50% !important;
+}
+.woocommerce .lost_reset_password {
+    background: #eaf1b3;
+    padding: 20px;
+}
+.woocommerce-ResetPassword p  input{
+background-color:white;
+}
+
+/*
+ ==========================================================================
+LA PAGE CONTACT
+==========================================================================
+*/
+
+/* conteneur page contact */
+.main_content_page_contact {
+    padding-top:0px !important;
+    background: white !important;
+}
+
+/* formulaire de contact */
+form div div div span input,form div div div span select,form div div span textarea{
+    background-color:white !important;
+}
+.group-inner {
+    margin:10px 0px;
+}
+.group-inner label , div.acceptation{
+    color:white;
+}
+
+.form-group .wpcf7-submit{
+    width:100%;
+    margin-top:10px;
+}
+.wpcf7{
+    background-color:#323131;
+}
+.wpcf7 form{
+    padding:50px;
+}
+#colonneFormulaire{
+width:100%;
+}
+
+/*
+ ==========================================================================
+LA PAGE NOUVEAUTE
+==========================================================================
+*/
+.su-tabs-nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #594037;
+    color:white;
+}
+.su-tabs-nav span{
+    color:white !important;
+}
+.su-tabs-nav span.su-tabs-current {
+   color:black !important;
+}
+.su-tabs-pane{
+    background-color:#353536 !important;
+}
+
+/*
+ ==========================================================================
+LA PAGE DE LA FICHE PRODUIT
+==========================================================================
+*/
+
+/* titre du produit */
+.conteneur_page_produit_simple h2.product_title {
+    padding-top:100px !important;
+    color:white !important;
+}
+/* la carte de la fiche produit oû on trouve la photo et las description */
+.clear-after-summary{
+    padding:20px;
+    background-color:#594037;
+}
+.woocommerce-product-gallery{
+    padding:10px;
+}
+/* stylisé le contenu de la carte */
+ 
+/** le conteneur de la fiche produit **/
+.conteneur_page_produit_simple .product .entry-summary{
+    margin:10px;
+}
+/** le prix  sans prix barré **/
+.woocommerce div.product p.price {
+    text-align: center;
+    padding-top: 20px;
+}
+/** le prix  avec prix barré **/
+.woocommerce div.product p.price del {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+/** la description **/
+.woocommerce div.product div p {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;  
+}
+/** le compteur **/
+#page_produit div div form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+/** le bouton d'ajout **/
+#page_produit div div button.single_add_to_cart_button {
+    width: 80% !important;
+}
+/** la catégorie et marque **/
+#page_produit div div .product_meta{
+    padding-left:20px !important;
+}
+#tab-pwb_tab-content{
+    text-align: center;
+}
+/** le conteneur principal de la fiche produit avec ma class perso **/
+#page_produit{
+    padding:60px;
+}
+div.product div.summary {
+    width: 58%;
+    background-color: white;
+}
+
+/* image principale de la fiche produit */
+/** Le bloc de l'image **/
+.woocommerce.content-full-width div.product div.images {
+    width: 40%;
+}
+/** bloc prix et autres info **/
+.woocommerce.content-full-width div.product div.summary {
+    width: 58%;
+}
+
+/** apparence du titre sur le produit de la fiche **/
+.single .entry-title {
+    text-align: center;
+    color: black;
+}
+/* lien conditions générales de vente sur fiche produit */
+.lien_condition_fiche_produit{
+    color:red;
+}
+.lien_condition_fiche_produit:hover{
+    color:green;
+}
+/* 
+La partie description et avis
+*/
+/* suppression du padding entre le tab panel de la page produit et la fiche produit */
+#page_produit div .woocommerce-tabs{
+    padding-top:0px;
+    background:#fefdd8;
+}
+/** la barre  qui contienne les liens **/
+.woocommerce-tabs ul.tabs{
+    background-color:black;
+    color:white;
+    margin:0px !important;
+}
+.woocommerce div.product .woocommerce-tabs .panel {
+    margin: 0px;
+    color:black;
+}
+/** la répétition du titre avis marque et description **/
+#tab-pwb_tab h2,.woocommerce-Reviews-title{
+    display:none;
+}
+/** les votes sur le commentaire **/
+.comment-form-rating {
+    text-align: center;
+}
+/* le contenu des tab */
+/** padding des tab **/
+.woocommerce-Tabs-panel {
+    padding:10px;
+}
+/** mise en forme **/
+.woocommerce-Tabs-panel p{
+    padding:10px;
+}
+.comment-form-comment{
+    width:100%;
+}
+#review_form_wrapper{
+    padding:0px;
+}
+.comment-form-comment textarea{
+    background-color:white;
+}
+
+/** bouton valider commentaire */
+#submit:hover{
+    color:black;
+}
+/* 
+Les produits de la même famille
+*/
+/** titre de produits de la même famille**/
+.related h2{
+    padding:20px;
+    text-align:center;
+    color:white;
+}
+.woocommerce .related.products { 
+    margin-top: 70px;
+    background-color: #594037;
+}
+/** La hauteur des produits apparentés **/
+.woocommerce ul.products li.owp-content-center .product-inner {
+    text-align: center;
+    min-height:400px;
+    z-index:0;
+}
+/** le text de la promo **/
+.rtrn {
+text-align: center;
+font-style: italic;
+color:brown;
+padding:20px;
+}
+/** Centrer l'image de la marque du produit **/
+.pwb-single-product-brands{
+    display: flex;
+    justify-content: center;
+    padding-bottom:15px;
+}
+/*
+ Dispotition des éléments sur la page produit simple en cas de produit variable
+*/
+.single_variation_wrap{
+    width:100%;
+}
+.single_variation{
+    float: none !important;
+    text-align: center !important;
+}
+.woocommerce-variation-add-to-cart  {
+    display:flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    
+}
+
+/*
+ ==========================================================================
+LA PAGE COMPTE ET PANIER
+==========================================================================
+*/
+
+/* Conteuneur des pages panier et compte */
+
+.main_content_page_compte_panier {
+    padding: 0px  !important ;   
+    
+}
+.main_content_page_compte_panier #content-wrap{
+    padding-bottom:0px !important;
+}
+.conteneur_page_compte  .entry {
+    padding: 170px 70px 70px !important ;
+    background-color:white;
+}
+/* couleur du tableau du panier */
+.woocommerce-cart-form,.cart_totals{
+    background-color:#ffffd2;
+}
+
+/* 
+Le bloc total panier 
+*/
+.blockUI .blockOverlay{
+    z-index: 0;
+}
+
+/*
+ ==========================================================================
+LA PAGE COMMANDES
+==========================================================================
+*/
+.main_content_page_commande  div div div .conteneur_page{
+    padding: 140px 50px 13px !important;
+    background-color:white;
+}
+.main_content_page_commande #content-wrap{
+    padding-bottom:0px !important;
+}
+/* Le background du form commande */
+.main_content_page_commande #content-wrap #primary #content .conteneur_page .entry .woocommerce{
+    background: #ffffd2;
+    padding: 47px;
+    border: 2px solid brown;
+}
+/* Paiement des commandes */
+.woocommerce-checkout #payment, .woocommerce-checkout #payment ul.payment_methods {
+    border-color: #f48e00;
+    padding: 8px;
+}
+
+/*
+ ==========================================================================
+LA PAGE JOURNAL QUI CONTIENT LES ARTICLES
+==========================================================================
+*/
+/* padding du conteneur journal*/
+.class_perso_blog{
+    padding: 50px 20px;
+}
+/* enlever la ligne verticale du contenu articles */
+.content-area{
+    border:none;
+}
+/* 
+ * la forme de l'article parmis les articles de cette page 
+*/
+.apparence_article_blog{
+    background-color: #f3e9e9;
+    width:70%;
+    margin: 0 auto;
+    padding:40px;
+}
+/** le conteneur du texte de l'article **/
+.blog-entry-summary{
+    background-color: white;
+    padding: 10px;
+    min-height: 139px;
+    border-radius:10px;
+}
+
+/** image sur l'article decoration **/
+.image_deco_article{
+    display:block ;
+    width:60% ;
+    margin:0 auto;
+}
+
+/** le titre article du journal **/
+.titre_article_blog{
+    width: 30%;
+    display: inline;   
+}
+.titre_article_blog a{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    color:white !important;
+}
+
+/** les metas descriptions des articles cad auteur ,date,comment etc **/
+.les_metas_des_articles{
+float: right;
+width: 60% !important;
+padding: 10px !important;
+color:white;
+margin:0 20% !important;
+}
+.meta-date{color:#9f9797 !important;}
+
+/** une classe perso **/
+.style-blog{
+    background-color:black;
+    padding:20px;
+}
+/** paragraphe de l'article **/
+.paragraphe_article_blog{
+    padding:20px;
+    border-radius:10px;
+}
+/** lire encore **/
+.lire_encore{
+    float: none;
+    width:100%;
+    padding:20px;
+}
+.lire_encore a{
+    background-color:white;
+    text-align: center;
+    color:black;
+    padding:15px !important;
+    width:30%;
+    margin:0 35%;
+    display:inline-block;
+}
+.lire_encore a:hover{
+    color:white !important;
+    background-color:black;
+}
+
+/* La pagination page articles */
+.oceanwp-pagination{
+    width:100%;
+}
+.oceanwp-pagination ul{
+    margin:0 auto;
+    text-align:center;
+}
+
+/*
+ ==========================================================================
+LA PAGE ARTICLE SEUL
+==========================================================================
+*/
+
+.contenu_single_article{
+    width: 76% !important;
+    padding:  20px;
+    border-style: none;
+    border-color: #f1f1f1;
+    background: white;
+    margin: 70px 12%;
+}
+/* Le titre */
+.titre_article .single-post-title{
+    text-align:center;
+    color:black ;
+}
+/* Les metas */
+.meta{
+    width: 50% !important;
+    margin: 0 25% !important;
+    display:flex !important;
+    padding:10px !important;
+}
+.meta li{
+    flex:1 !important;
+    text-align: center;
+    color:black;
+}
+/* Le contenu */
+.contenu_article{
+    width: 96%;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px;
+}
+.contenu_article figure{
+    margin-bottom:0px;
+    padding:10px;
+}
+.contenu_article p, .contenu_article ul{
+    padding: 0 20px 10px;
+    margin-bottom: 0;
+    font-family: montserrat;
+    color:black;
+}
+/* commentaire  de la page article seul */
+.woocommerce-noreviews{
+    padding:0px;
+    float:left;
+    display:block;
+}
+#comments{
+    padding: 20px;
+}
+#comments h3{
+   text-align: center;   
+}
+.comment-textarea textarea{
+    background: #ffd5d5;
+}
+#comment-submit:hover{
+    color:black;
+}
+#theChampReplyTitle{
+    display:none;
+}
+/* La section autres articles de la page article seul */
+.autre-article{
+    text-align: center;
+}
+/* Le choix entre commentaire facebook ou commentaire Standard */
+.theChampCommentingTabs ul {
+    display:flex;
+    justify-content: space-evenly;
+    float:none !important;
+}
+.theChampCommentingTabs ul li {
+    color:black;
+}
+li.theChampSelectedTab{
+    color:brown !important;
+}
+/* connecté en tant que sur la page article seul */
+.logged-in-as{
+    display:flex;
+    justify-content: space-evenly;
+}
+/* la photos dans articles aimez encore */
+.article_aimez_encore a img{
+  height:200px;
+}
+/* designe le plugin ultimate social média */
+.sfsi_widget{
+    width:100%;
+    margin-bottom: 16px;
+}
+.sfsi_wDiv{
+    width: 50% !important;
+    margin: 0 25%;
+    display:flex;
+}
+.sfsi_wDiv div{
+    flex:1;
+}
+
+/*
+ ==========================================================================
+LA PAGE COMPTE
+==========================================================================
+*/
+/* Les liens avec effet blind  dans page compte */
+   .liens_blind{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px !important;
+    background-color:#185317d9;
+    color:black;
+    text-align: center;
+   } 
+   .liens_blind li{
+    min-width: 23%;
+    padding: 15px;
+    background:white;
+   } 
+   .liens_blind li:hover{
+    cursor:pointer;
+    background-color:black;
+    color:white;
+   } 
+/* le formulaire compte avec effet blind */
+.formulaire_blind{
+    display:none;
+}
+/* La disposition du formulaire compte avec effet blind */
+.woocommerce-MyAccount-content .wpcf7{
+    width: 70%;
+    margin: 3% 15% 0%;
+}
+/* Cacher le suivi commande compte avec effet blind */
+.woocommerce-form-track-order{
+    display:none;
+}
+/* meilleurs produits blind page compte */
+.meilleur_produits_blind{
+    display:none;
+}
+
+/* Apparence des produits sur la page compte */
+.meilleur_produits_blind div ul{
+    padding:0px !important;
+}
+.meilleur_produits_blind div ul li.entry{
+    padding:15px !important;
+    background-color: #d1d15b;
+    margin:0px;
+}
+
+/* Le suivi de commande page compte */
+.suivi_commande{
+    background-color:black !important;
+}
+.suivi_commande .woocommerce{
+    padding-top:10px;
+}
+.woocommerce-form-track-order{
+    background: white;
+    margin: 10px auto;
+    padding:17px;
+    width:70%;
+}
+/* 
+resultat de suici de commande 
+*/
+.resultat_de_commande{
+    display:none;/* pour l'effet blind javascript*/
+}
+ /** Le titre du résultat  **/
+ .woocommerce-order-details h2{
+    text-align:center;
+   
+}
+
+/** Le onteneur du résultat **/
+.woocommerce-order-details,.order-info{
+    padding:10px;
+    margin:0px;
+    background: #feffff;
+}
+/** La barre des adresses **/
+.woocommerce-customer-details{
+    padding:10px;
+    background: #31534e;
+    color:white;
+}
+.woocommerce-column__title{
+    color:white;
+    text-align: center;
+}
+.woocommerce-column--billing-address{
+    padding:10px;
+    background-color: #262626;
+}
+.woocommerce-column--shipping-address {
+    padding:10px;
+    background-color: #081038;
+}
+.woocommerce-customer-details--phone ,.woocommerce-customer-details--email{
+    display:none;
+}
+
+/* Le formulaire edit compte */
+.woocommerce-EditAccountForm ,.edit-account{
+    border: 1px solid;
+    padding: 25px;
+    background: white;
+}
+
+/* 
+widget Personnel de la page compte 
+*/
+#widget_page_compte{
+    padding: 10px 10px 29px!important;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background: #3a2323;
+    flex-wrap: wrap;
+}
+#widget_page_compte .le_widget{
+    min-width:30%;
+    background-color: white;
+    padding:10px;
+    border-radius:20px;
+    margin:10px 0px;
+}
+.le_widget_titre{
+    text-align: center;
+    border-bottom: 1px solid brown;
+}
+
+/* 
+ * nav_compte personalisée 
+*/
+.menu_compte_mobile{
+    display:none;
+}
+.liste_liens_compte{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 20px !important;
+    justify-content: space-evenly;
+    background: #c0762a;
+    margin:0px !important;
+}
+.liste_liens_compte li {
+    min-width:10vw;
+    padding:10px;
+    text-align: center;
+}
+/* le contenu compte */
+    .woocommerce-MyAccount-content{
+    width: 100%;
+    float: none;
+    background: #ffffd2;
+    padding: 40px 40px 200px;
+}
+/* les input des tableaux du compte */
+.woocommerce-orders-table__cell , .woocommerce-orders-table__cell-order-number{
+    background: white !important;
+}
+/* adresse compte */
+.woocommerce-MyAccount-content p{
+    text-align: center;
+    color:black;
+}
+/* woocomerce édit compte */
+.woocommerce-Input {
+    background: white !important;
+}
+
+.woocommerce-EditAccountForm ,.edit-account{
+    width: 70%;
+    margin: auto;
+}
+
+/*
+ ==========================================================================
+LA SECTION DE MEDIAQUERY DU SITE
+==========================================================================
+*/
+
+/*
+********
+@media  Pour les tailles superieures à 963px et inferieures à 1223px
+********
+*/
+
+@media only screen and (max-width: 1223px) and (min-width: 963px){
+    /* la nav */
+    #site-navigation-wrap  li a  {
+        padding:7px !important;
+        font-size: 13px !important;
+    }
+    #site-header{
+        padding: 0px 5px !important;
+    }
+        #site-header-inner {
+        padding: 5px 10px !important;
+    }
+    /* Le logo */
+    #site-logo{
+    padding-left:0px;
+    }
+    /*
+    La page compte en mediaquery pour les tailles entre 963 et 1223 px
+    */
+    .main_content_page_compte_panier{
+    padding: 0px  !important ;       
+    }
+    .conteneur_page_compte  .entry{
+        padding: 140px 10px 10px !important ;   
+    }
+    .conteneur_page_compte {
+        padding: 5px 0px !important ;
+        background-color: white;   
+    }
+
+}
+
+/*
+********
+@media  Pour les tailles MAX de 963px 
+********
+*/
+@media (max-width: 964px){
+   
+    /*
+    * La Nav sur les écrans qui ne dépassent pas 963px
+    /* 
+    /* suppression du padding de la nav  à partir de la tablette et mobile */
+    #site-header ,#site-header-inner{
+    padding: 0px 15px !important;
+    }
+    /* l icone de la nav en mode tablette */
+    .mobile-menu{
+        font-size:3em !important;
+    }
+    /* logo de la navbar */
+    #site-logo{
+    padding:0px;
+    }
+    /* la div qui contient la barre de recherche sur la page boutique */
+    #barre_recherche_shop {
+        padding:0px 20px 0px 20px;
+    } 
+    /* padding lorsque il s'agit de la page boutique et des pages de catégorie de produit */
+    .liste_produit_boutique{
+        padding: 0px;
+    }
+    /* le padding lorsque il s'agit de la page d'accueil ,nouveauté ,promotion */
+    .liste_produit_accueuil_nouveaute_promo{
+        padding:20px 5px !important;
+    }
+
+    /* 
+    * formulaire d'inscription 
+    */
+    .mon_formulaire #customer_login .u-column2{
+        width:100% !important;
+        padding:20px;
+    }
+    /** La largeur du formulaire de connexion et d'inscription **/
+    #customer_login{
+        width:90%;
+        margin: 0 auto;
+        }
+    /* cacher la bare de retour en scroll en haut pour tablette et mobile */
+    #scroll-top { display: none !important; }
+
+    /*
+    La page compte pour les tailles max 963px
+    */
+    .main_content_page_compte_panier {
+    padding: 0px  !important ;   
+    }
+    .conteneur_page_compte  .entry{
+    padding: 140px 10px 10px !important ;
+    }
+    .conteneur_page_compte {
+    padding: 5px 0px !important ;
+    background-color: white;
+    }
+
+    /*
+    * Les commentaire  pour une taille max 963px
+    */
+    .woocommerce-tabs div h2{
+        display:none;
+    }
+    #commentform,#review_form,#review_form_wrapper,#reviews{
+        padding:0px !important;
+        background: #fed8d8;
+    }
+    /* 
+    * La page de la fiche produit pour les tailles max 963px
+    */
+    /** Le conteneur de la fiche produit **/
+    #page_produit{
+    padding:0px !important;
+    }
+    #page_produit h2.product_title {
+        padding: 125px 0 10px !important;   
+    }
+    .woocommerce-product-gallery--with-images{
+        width:100% !important;
+    }
+    .woocommerce-product-gallery--with-images a img{
+        width:100% !important;
+    }
+    /** le conteneur de la carte droite produit **/
+    .conteneur_page_produit_simple .product .entry-summary{
+    margin:0px !important;  
+    }
+    /*
+    * Le conteneur page commande pour les tailles max 963px
+    */
+    .main_content_page_commande  div div div .conteneur_page{
+        padding: 140px 13px 13px !important;
+    }
+}
+
+/*
+********
+@media  Pour les tailles du format smartphone max 764px 
+********
+*/
+
+@media (max-width: 767px){
+    /* Le conteneur */
+    .container{
+        max-width: 100% ;
+    }
+    #content-wrap{
+
+        padding-top:0px !important;  
+    }
+    /* hide to-bar */
+    #top-bar{
+        display:none;
+    }
+    /* cacher le text  menu */
+    span.oceanwp-text{
+        display: none !important;  
+    }
+    .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+        content: "\f00b";
+        font-size: 1.8em;
+        padding-right: 5px;
+        color:white;
+    }
+    /* Les news letter */
+    #textNewsLetter div div div div h2{
+        line-height: 1.5em !important;
+        font-size: 16px;
+    }
+    /* formulaire de contact format mobile */
+    #colonneFormulaire{
+        padding:0px !important;
+    }
+    #colonneDroiteFormulaire{
+        width:0px;
+    }
+    .wpcf7 form{
+        padding:10px;
+    }
+    /*
+    *La page journal en format smartphone
+    */
+    .apparence_article_blog{
+        width:100%;
+        padding:10px;
+    }
+    /* Le bouton d'articles blog */
+    .lire_encore a{
+        background-color:white;
+        width:90%;
+        margin:0 5%;
+    }
+    /* L'espacement padding dans le blog en haut */
+    .class_perso_blog{
+        padding:0px !important;    
+    }
+    /* le titre de l'article dans blog */
+    .titre_article_blog{
+        width:100%;
+        display: block;
+        text-align: center;
+    }
+    .les_metas_des_articles{
+        width: 100% !important;
+        font-size: 10px !important;
+    }
+    /* L'espacement entre les articles */
+    .blog-entry.large-entry{
+        padding:0px;
+        margin:0px;
+    }
+    /* 
+    * La page Article seul  format smartphone
+    */
+    .main_content_post_single #content-wrap{
+        padding-top:30px !important;
+    }
+    /* text article */
+    .contenu_article p{
+        padding:0px;
+        text-align:center;
+    }
+    .contenu_single_article{
+        width: 95% !important;
+        margin:0px auto;
+    }
+
+    /* 
+    designe le plugin ultimate social média 
+    */
+    .sfsi_wDiv{
+        width: 100% !important;
+        margin: 0px;
+    }
+    .meta{
+        width: 100% !important;
+        margin: 0% !important;
+    }
+
+    /*
+    * formulaire d'inscription pour les formats smartphone
+    */
+    /** La largeur du formulaire de connexion et d'inscription **/
+    #customer_login{
+        width:90%;
+        margin: 0 auto;
+    }
+    .mon_formulaire #customer_login .u-column2{
+        width:100% !important;
+        padding:10px;   
+    }
+    /* La fiche Produit dans la page produit pour les smartphones */
+    #page_produit {
+        padding: 60px 0px;
+    }
+    /** le titre du produit **/
+    #page_produit h2{
+    font-size:19px !important;
+    background-color: white;
+    min-height: 46px;
+    line-height: 46px;
+    }
+    /* 
+    * Les produits apparentés pour smartphone
+    */
+    #page_produit div .related ul.products{
+        margin-top:0px !important;
+        padding:0px !important;
+    }
+    /** La hauteur des produits apparentés **/
+    .woocommerce ul.products li.owp-content-center .product-inner {
+        text-align: center;   
+        width:100% !important;
+    }
+    /** image produit apparentés  au milieu **/
+    .related ul li  div ul li div div div div div a img {
+        margin:  auto;
+    }
+    /*
+    * La page Boutique smartphone 
+    */
+    /* liste des produits */
+    .liste_produit_boutique{
+        padding:0px !important;
+    }
+
+    /* le conteneur */
+    .woocommerce ul.products{
+        margin:0px;
+    }
+    /* toolbar */
+    .oceanwp-toolbar{
+        padding:120px 10px 10px !important;
+        margin-bottom:0px !important;
+    }
+    /* les etiquettes de choix de catégorie */
+    .oceanwp-toolbar .elementor-840{
+        margin:10px 0px 0px 0px;
+    }
+    /* les images du produit dans la page boutique */
+    #id_shop ul li  div ul li div div div div div a img {
+        margin:  auto;
+        width: 100%;
+    }
+    /*Les images du produit shop apres recherche de produit selon la catégorie */
+    .product-entry-slider-wrap  div div div div a img {
+        margin:  auto;
+        width: 100%;
+    }
+
+    /* La bare de recherche ajax mobile */
+    #ajaxsearchlite1 {
+        margin:40px 0px ;
+        width:100%;
+    }
+    #ajaxsearchlite1 .probox, div.asl_w .probox{
+        margin-top:0px !important;
+    }
+    /* le style du résultat de recherche ajax */
+    .resultat_recherche_ajax {
+        padding: 150px 10px 25px !important;
+    }
+
+    /* Les boutons de filtre page boutique */
+    .ul_filtres{
+        width:100% ;
+        display:block;
+        min-height:180px !important;
+    }
+    .li_bouton_filtre{
+    width:100%;
+    }
+    /* les boutons de choix de vue filtre */
+    .oceanwp-grid-list{
+        display:none !important;
+    }
+    /* le bouton filter  */
+    .oceanwp-toolbar .oceanwp-off-canvas-filter{
+        display:inline-block;
+        background-color:white !important;  
+    }
+    .container_filtre{
+        display:none !important;
+    }
+    /* l'affichage des produits en format smartphone */
+    /** padding lorsque il s'agit de la page boutique et des pages de catégorie de produit **/
+    .liste_produit_boutique{
+        padding: 0px;
+    }
+    /** Le padding lorsque il s'agit de la page d'accueil ,nouveauté ,promotion **/
+    .liste_produit_accueuil_nouveaute_promo{
+        padding:20px 5px !important;
+    }
+
+    /*
+    * page compte pour smartphone
+    */
+    /*cacher le menu pour les autres formats superieurs au smartphone (celui de la page compte biensur)*/
+    .woocommerce-MyAccount-navigation{
+        display:none;
+    }
+    /* le bouton du dropdown */
+    .dropbtn{
+        width:100%;
+    }
+    /* faire apparaitre le menu mobile que j'ai mis en place pour la page compte */
+    /**************menu compte pour les mobiles*****/
+
+    .dropbtn {
+        background-color: #3498DB;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+  
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+    }
+  
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+  
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+  
+    .dropdown a:hover {
+        background-color: #ddd;
+        }
+  
+    .show {
+        display: block;
+    }
+    /* cacher le menu mobile pour les formats superieurs */
+    .menu_compte_mobile{
+        display:flex !important;
+        width:100%;
+    }
+    #myDropdown{
+        margin: 69px 0px;
+        width: 92%;
+    }
+    /* conteneur page compte mobile*/
+    .conteneur_page_compte  .entry{
+        padding: 130px 10px 10px !important ;
+        
+    }
+    .conteneur_page_compte {
+        padding: 5px 0px !important ;
+        background-color: white;   
+    }
+    /* le contenu compte */
+    .woocommerce-MyAccount-content{
+        padding: 0px !important;
+    }
+    .woocommerce-EditAccountForm ,.edit-account{
+        width: 100% !important;
+    }
+    /* les link avec jquery dans page compte */
+    .liens_blind{
+    padding:0px !important;
+    } 
+    .liens_blind li{
+        min-width: 100%;
+        margin:2px 0px;
+    } 
+    /* Le formulaire de suivi commande page compte */
+    
+    .woocommerce-form-track-order{
+        width:100%;
+    }
+    /* Le width du formulaire compte avec effet blind */
+    .woocommerce-MyAccount-content .wpcf7{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* 
+    * La page commande pour smartphones 
+    */
+    .main_content_page_commande #content-wrap #primary #content .conteneur_page .entry .woocommerce{
+        padding: 8px;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+    
+    /***le résultat du comptage de produits à la recherche */
+    .result-count {
+        display: flex;
+        justify-content: center;
+        width:100%;
+    }
+    
+}
+    
+
+
+
+
+
+
+
+.woocommerce-MyAccount-content >p{
+    display:none;
+}
+
+
+
+
+#widget_page_compte{ display:none };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

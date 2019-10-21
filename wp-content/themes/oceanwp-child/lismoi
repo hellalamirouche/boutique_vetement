@@ -1,0 +1,266 @@
+﻿ couleur utilisées:  header : #f6f6f6;
+ couleur au survol lien : #f6f6f6 ;
+ 
+ 
+ Quand j'active autoptimize pour les images , les liens ne fonctionnes pas sur le localhost (donc je le fairai à la fin) 
+ 
+ lis moi :
+ 
+ je vais crééer une boutique de vetement classique homme dans laquelle je vais venre des costumes chemises chaussures cravates et ceintures + (montre classique) 
+ 
+ le thème utilisé est Oceanwp avec sa version gratuite .
+ la boutique aura comme nom : A&hellal .
+ les extensions que je vais utilisé :
+les extensions recommandée par ce thème : 
+1) élémentor comme constructeur de page .
+2) Oceanextra : Ajouter des fonctionnalités supplémentaires telles que des widgets, boîtes de méta, 
+import/export et un panneau qui permet d’activer les extensions premium .
+3)WPForms Lite : que je ne vais pas télécharger car j utilise contact form 7 .
+
+********************************* début *************************************************************
+extension que je vais télécharger moi meme :
+1)woocommerce pour créer la boutique enligne .
+2)ocean product sharing pour partager les produits sur les réseaux sociaux
+3)Really Simple SSL : pour la protection du site si tu as déja une certefication ssl 
+4) iThemes Security (anciennement Better WP Security) : pour la sécuriité du site 
+5) UpdraftPlus WordPress Backup Plugin : pour la sauvegarde et la réstauration facile du site 
+6) Yoast SEO pour le referencement 
+7) WP Mail SMTP par WPForms : pour recevoir les mail sur la boite de reception pas sur des spam 
+8) installer smart slider 3 pour le slide de la page d'acceuil .
+
+****************************************************** 
+les images des bloc accueil taille 800*450px;
+taille image collection eté : 1920*750
+installation du plugin newsletter .
+
+ /*** ********************************************modifier d'apparence de l'article lui meme (seul) *****************************************************************************/
+ partial/single/...
+je prends le dossier partial dans mon theme parent et je prend  le dossier single et je trouve à l'interieur tout les fichiers qui concernent la structure de l'article .
+j'ajoute des classes et je fais mes modifications dedant .
+1) j'ai ajouté une class article_aimez_encore pour modifier les image en leur donnant un height de 200px ;
+
+/************************************************ modification de la page blog des articles **************************************************************************/
+partial /entry/
+dans le dossier partial /entry/ on trouve tout les éléments pour modifier cette apparance , en rajoutant des classes et en modifiant le code des fichiers dedant
+1- j'ai déplacer le code qui est dans meta.php vers header.php du meme dossier entry afin de mettre les metas en face du titre , du coup le dossier meta.php est vide .
+2- j'ai rajouter un shortcode elementor head blog  au fichier index.php avec une condition : si c'est une page article affiche le .
+<?php  if(have_posts()){
+			  
+ echo do_shortcode('[oceanwp_library id="2701"]');
+			  
+} ?>
+3- j'ai mis cette fonction dans index.php pour ajouter une class si la page est un blog -> tout en haut pour supprimer le padding:
+    <?php  if(have_posts()) {echo'supprime_padding_container_blog' ;} ?>
+
+4- j'ai ajouter une décoration sur les articles partial , une sorte d'image qui se répéte sur chaque article.
+dans partial/entry/layout.php  :
+<img src="<?php echo get_stylesheet_directory_uri()?>/assets/img/deco_article.png" alt='decoration_article' id="image_deco_article">
+5- j'ai changé l intitulé du bouton "read more" en "lire la suite" dans partial/entry/readmore.php
+
+7- suppession de la bare de recherche lorseque on affiche le résultat à l'aide d'une fonction  remove_search_sidebar()  function.php
+
+
+/j'ai annulé ca pour le moment *******************j ai ajouté une zone widget sur le header */   
+c'est une zone widget qui prend trois blocks au maximum .
+1) j'ai inserer le code du widget dans function.php 
+2) puis j'ai inserer le code du widget dans partial/header/layout.php et j'ai modifier la balise header pour permettre à la fonction sticky top de fonctionner sans apparaitre le widget ajouter en scrollant .
+-> le code du widget est :
+<div class="widget_amirouche"  >
+				<?php
+				if( is_active_sidebar( 'header_special_amirouche' ) ){
+				dynamic_sidebar( 'header_special_amirouche' );
+				}
+				?>
+			</div>
+3) le style de ses zones widget se trouve dans le style.css .
+4)
+<!-- ajout de div dans partial/entry/header.php qui va se fermer dans readmore.php -->
+<div class="style-blog">
+pour styliser le blog des articles .
+/****************************************************************************************/
+
+/**************************j'ai réalisé le sticky du header et ceci *//
+1) j'ai effectué un code javascript que j'ai mis dans le footer.php , c'est lui qui gere le rajout d'une classe sticky dans la barre de menue 
+2) la classe sticky se retrouve dans le fichier style.css .
+/*********************************************************************************************************************
+
+/******* je vais rélaiser des models dans le theme panel et je vais les inserer dans differents endroits que je souhaite *********/
+1)création du footer personnalisé déja fait en haut .
+
+2)création de l entête au dessu du header avec élémentor puisje l'ai  intégré evec le code court <?php echo do_shortcode(' [oceanwp_library id="645"]') ;?>.
+3) j'ai téléchargé le plugin ajax search lite et je l'ai modifié avec css et je l'ai intégré dans header.php qui se trouve dans le dossier partials.
+<?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
+4) j'ai remplacé le formulaire du thème par celui d'ajax dans les parametres du plugin .
+5)j'ai costomisé son css .
+/*******************************************************************************************************************************/
+/****************************************page connexion et inscription***********************************************************/
+1)ajout de l'extension wp members pour costomiser le formulaire d'inscription en lui ajoutant d'autres élément input afin d'éviter au client de les saisir apres .
+2) réalisation des deux formulaires de connexion et inscription .
+3) customisation avec le css dans style.css.
+4) ajout de class avec des hook afin de bien costomisé le formulaire inscription et connexion ---->regarde dans function.php .
+*************************************************************************************************************************************
+/********************************************page connexion administration********************************************************/
+1) à l'aide de hook j'ai costomisé la page administration .
+2) j'ai supprimé le logo avec une fonction avec un hook:
+function changerLogoLogin() {
+    echo '<style>
+h1 a {display:none !important}
+</style>';
+}
+add_action('login_head', 'changerLogoLogin');
+
+2) j'ai ajouté une div pour costomisé le login et mettre un background image avec les deux hook add_action( 'login_header', 'action_login_header', 10, 0 ); et add_action( 'login_footer', 'action_login_header', 10, 0 ); 
+3) dans le premier hook du header : 
+-j'ai ouvert une div dans laquelle j'ai mis du css pour le background-image 
+- j'ai mis un h2 avec un link vers la page home home_url() 
+4)j'ai tout modifié concernant le css du login à l'aide du hook : add_action( 'login_enqueue_scripts', 'style_login' ) tout le css se trouve dans cette fonction qui se trouve dans function.php.
+5) j'ai férmé la div à l'aide du hook   add_action( 'login_footer', 'action_login_header', 10, 0 );
+
+/***************************************************************************************************************************************/
+
+/************************************ page shop produit seul ******************************************************************************/
+1) j'ai rajouté un id avec une fonction qui stipule : 
+quand il s'agit d'une page produit seul , tu ajoute  id="page_produit" si une page shop tu ajoute un autre id="id_shop";.
+2) j'ai ajouté manuelement une classe "conteneur_page_produit_simple" sur l'élement article du fichier wc-content-wraper.php pour un bit de style.
+3) j'ai ajouté manuelement une condition  sur le fichier wc-content-wraper.php qui se trouve dans le dossier montheme/woocommerce/ 
+le but : c'est d'afficher le titre du produit  c'est un echo tu titre du produit sélectionné et j'ai effectué un coup de css dans style.css.
+  <?php if ( is_product()){
+                      echo woocommerce_template_single_title(); 
+				}
+5) modifier l'apparence des éléments dans la fiche produit dans les réglages du thème oceanwp section woocomerce -> produit unique
+
+********j'ai effectué des reglages générales dans le menu personalisation woocommerce du thème ************************
+6) j'ai stylisé la page shop produit seul avec du css et avec le responsive .
+****************************************************************************************************************************
+mise en place du filtre :
+1)j'ai mis en place un autre type de filtre qui s'appel : personalisé -> woocommerce -> archive -> AFFICHER LE BOUTON FILTRE.
+2) apres cela il aura affichage d'un bouton filtre dans la page shop ;
+3) a partir de apparence widget : on vois l'apparition d'une zone widget dans laquelle on va mettre les filtres .
+***********************************************************************************************************************************
+
+ /**********************navbar mobile ******************************/
+j'ai changé l'icone de la navbar avec le css en modifiant le code de la navbar "content: "\f00b";
+voici une liste icone code :https://astronautweb.co/snippet/font-awesome/
+
+
+/************plugin meilleurs ventes *****************************/
+j'ai installer PickPlugins Product Slider for WooCommerce .
+ce plugin s'affiche sur la barre latérale sous le nom de wcps .
+je l ai utilisé avec un short code
+/*****************************************************************************************************************************
+
+/***dans partial /header j'ai ajoité une condition qui stipule que le header n'aparait pas si je suis en page shop
+if(!is_shop()){
+		$category=array('costume','chemises','chaussures','accessoires');
+		if(!is_product_category($category)){
+		echo do_shortcode(' [oceanwp_library id="645"]') ; 
+	//*****************************code court de ajax pour la recherche des produits et des articles **********************************************************************-->
+	    echo do_shortcode('[wpdreams_ajaxsearchlite]'); 
+	   }
+	}
+
+/*  ****** j'ai installer un plugin WPB WooCommerce Category Slider et j'ai affiché les latests produits dans la page d'accueil
+
+/*ajout de la page 404 comme un model dans la bibliothèque (j'ai effectué ce model avec élémentor )et j'ai choisie la page dans personalisé /option générale/page d'erreur 404
+
+
+
+/******* j'ai supprimé le header personel que j'ai créé car il gene la vue *********************************************/
+1) j'ai mis un script  javascript en bas du footer.php  afin de faire l effet de cacher la barre de navigation en scrolant en bas et de la faire réapparaitre en scrolant vers le haut.
+et aussi elle est transparente en rentrant sur le site car je veux qu'on voit tout le slider .
+j'ai ciblé les liens avec le javascript pour modifier les propriétés css des éléments en scrolant .
+
+/*************************************************************************************************************************************/
+j 'ai installé le plugin regénérate thumbnail afin de mettre les photos à la bonne taille   on le trouve dans outil/regénérer les photos
+
+/*****************j'ai ajouté jquery a ****************************************/
+j'ai juste linké le cdn dans header.php
+/**********************************************************************************************************/
+/***** jai installé SLIDER BY 10WEB pour la page boutique afin d'afficher des slider selon la catégorie de produits choisie****/
+
+/****j'ai créér la page nouveauté avec à l'interieur elle affiche les nouveaux produits avec toutes les catégories et en random
+le short code est : [recent_products limit="8" columns="4" product_category category="costume ,chemises" orderby="rand"  paginate="true"]
+
+/****je créer d autres pages comme costume et chemises pour les nouveautés et je l ai mis en sous menu avec ordoner par date :
+[recent_products limit="8" columns="4" product_category category="chemises" orderby="date"  paginate="true"] -> chemises
+[recent_products limit="8" columns="4" product_category category="costume" orderby="date"  paginate="true"] -> etc
+
+/*************************************************
+
+1) j'ai ajouté une classe dans le fichier header.php ('conteneur_page_boutique_product_blog' ) à la page boutique et la page single product et aussi la page blog sur l élément <main> avec une condition 
+le but c'est de supprimer le padding top de 100px .
+2)pour customiser la page moncompte j'ai dit ajouter la classe  conteneur_page_compte avec le else if is_page(9) : car la page 9 est ma page compte
+<?php
+ if ( is_shop() ||  is_product_category() || is_product() || ( !is_front_page() && is_home() ) ){ echo 'conteneur_page_boutique_product_blog' ;} 
+else if(is_page(9)){echo'conteneur_page_compte';} 
+?>
+
+
+
+2) j'ai ajouté deux classes differentes  avec une condition dans le fichier loop/loop-start.php  sur l'élément <ul>:
+2-1) la  premiere est  la classe liste_produit_boutique" qui s'affiche dans la page boutique et les catégories de produit .
+mettre un padding de 150px sur la boucle des produit .
+
+2-2)la deuxieme c'est la classe liste_produit_accueuil_nouveaute_promo, il s'affiche quand il s'agit des pages d'accueil et les pages nouveaute et promotion et le but c'est de maitriser l'aparence des produits quand il s'agit de ses pages .
+ <?php echo esc_attr( $wrap_classes ); ?><?php if(is_shop() || is_product_category('accessoires','chemises','cravates','ceintures','chaussures','costume') ){ echo ' '.'liste_produit_boutique'; }elseif(is_front_page()||is_page(array('nouveaute','promotions'))){echo ' '.'liste_produit_accueuil_nouveaute_promo';} ?>" ?>
+
+
+/*******************************nav********************************************/
+j'ai utilisé un hook pour ajouter une condition de connexion ****/
+add_filter( 'wp_nav_menu_items', 'add_login_logout_register_menu', 199, 2 );
+si l utilisateur n'est pas connecté sur son compte il aura le lien connexion .
+s il se connecte sur son compte il aura l icone du compte .
+/****************************************************************************/
+
+/*******pour customiser las page compte ****************/
+j'ai ajouté une classe dans le fichier partial/page/layout.php avec une condition d'affchage.
+si c'est la page mon-compte ou panier tu affiches une classe sinon tu affiche une autre classe poue la div apres celle qui contient id="content"
+<?php if (is_page(9) || is_cart()) { echo'conteneur_page_compte_panier' ; } else { echo'conteneur_page';}?>
+/*********************************************************************************************************************/
+/********************sur le header.php **********************************/
+sur l'élément <main> j'ai ajouté une condition qui affiche des classes differentes :
+-si ce sont les pages boutiques ,les pages boutiques avec categorie ,la page blog  elle affiche : la class="conteneur_page_boutique_product_blogpour" .
+ - si c'est la page mon-compte ou panier elle affiche la class="main_content_page_compte_panier".
+ - si c'est la page contact elle affiche  la class='main_content_page_contact'; c'est pour styliser les pages différemment à l'aide de ses classes
+ _ soi c'est un single post elle affiche la class="main_content_post_single"
+ - si c'est la page commande elle affiche la class="main_content_page_commande"
+ <?php
+			 if ( is_shop() ||  is_product_category() || is_product() || ( !is_front_page() && is_home() )){ echo 'main_content_page_boutique_product_blog' ;}
+			 else if(is_page(9)||is_cart()){echo'main_content_page_compte_panier';}elseif( is_page('contact')){echo'main_content_page_contact'; } elseif(is_single()){
+				echo'main_content_post_single';}elseif(is_checkout() ){
+					echo'main_content_page_commande';} ?>
+/*******************************************************************************************************************************************************/
+
+/***personaliser les page à l'aide de style avancée woocommerce du template oceanwp***/
+
+/*******************************************************************
+1) j'ai créée deux slides de meilleurs produits avec deux short codes : un est pour les pc et tablettes l'autres pour portables.
+
+
+/****erreur w3c ***/
+- j'ai eu ce warning  :  Warning: Article lacks heading. Consider using h2-h6.
+je l'ai résolu en rajoutant un <h2 style="display:none">display none</h2> en display none dans le fichier woocommerce/w-content-wraper.php*/
+/*********************/ 
+
+/***********************w3c *******************************************/
+1) informations légales ----------------ok;
+2) POLITIQUE DE CONFIDENTIALITÉ ---------------ok;
+3) CONDITIONS GÉNÉRALES DE VENTE ET D’UTILISATION ---------------ok;
+4) accueil ----------------ok;
+5) page boutique : -------------ok.
+- page produit seul ------------ok.
+6) blog  ----ok .
+7) page contact --------------ok.
+8)qui sommes nous ----------ok
+9)engagement ----------ok
+
+
+
+/*****j'ai créé un model de facture en déplacant le fichier wp-content/plugins/woocommerce-pdf-invoices-packing-slips/templates/Simple à
+wp-content/themes/oceanwp-child/woocommerce/pdf/boutica_facture 
+j'ai mis du style personaliser dans style.css dans boutica_facture
+/**************************************************************************/
+
+
+/************************referencement*********************************/
+

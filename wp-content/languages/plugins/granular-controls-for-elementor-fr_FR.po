@@ -1,0 +1,434 @@
+# Translation of Plugins - Granular Controls For Elementor - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - Granular Controls For Elementor - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-03-30 08:06:19+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Granular Controls For Elementor - Stable (latest release)\n"
+
+#: settings/settings.php:208
+msgid "Change the Live View text or leave empty to only show the icon :) "
+msgstr "Modifier le texte de la visualisation en direct ou laisser vide pour afficher uniquement l’icône :)"
+
+#: settings/settings.php:207
+msgid "Live View Name"
+msgstr "Nom de visualisation en direct"
+
+#: settings/settings.php:184
+msgid "Site's Home Page"
+msgstr "Page d’accueil du site"
+
+#. Author URI of the plugin/theme
+msgid "https://granularcontrols.com/"
+msgstr "https://granularcontrols.com/"
+
+#. Author of the plugin/theme
+msgid "Zulfikar Nore"
+msgstr "Zulfikar Nore"
+
+#. Description of the plugin/theme
+msgid "Take control of your favourite page builder's elements to design better websites and landing pages and overall better UI/UX."
+msgstr "Prenez le contrôle des éléments de votre constructeur de page favori pour concevoir de meilleurs sites web, pages de destination et globalement de meilleurs UI/UX."
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/norewp/granular-controls-elementor"
+msgstr "https://github.com/norewp/granular-controls-elementor"
+
+#. Plugin Name of the plugin/theme
+msgid "Granular Controls Elementor"
+msgstr "Granular Controls Elementor"
+
+#: settings/settings.php:239
+msgid "Select the template you'd like to be used as the Welcome Panel in the Admin Dashboard."
+msgstr "Sélectionnez le modèle que vous souhaitez utiliser comme panneau de bienvenue dans le tableau de bord d’admin."
+
+#: settings/settings.php:238
+msgid "Panel Template ID"
+msgstr "ID de modèle de panneau"
+
+#: settings/settings.php:228
+msgid "Enable the custom Granular Welcome Panel in the Admin Dashboard."
+msgstr "Activez le panneau de bienvenue personnalisé de Granular dans le tableau de bord."
+
+#: settings/settings.php:227
+msgid "Welcome Panel"
+msgstr "Panneau de bienvenue"
+
+#: settings/settings.php:217
+msgid "Enable use of Elementor content in the Admin Dashboard - below options will not function correctly with this setting turned off!."
+msgstr "Activez l’utilisation du contenu Elementor dans le tableau de bord d’admin - les options ci-dessous ne fonctionneront pas correctement si ce régalge est désactivé !"
+
+#: settings/settings.php:216
+msgid "Elementor In Dashboard"
+msgstr "Elementor dans le tableau de bord"
+
+#: settings/settings.php:201
+msgid "If you've changed the default exit point it might be worth changing the button text too so that you know where you'll land on exit :) "
+msgstr "Si vous avez modifié le point de sortie par défaut, il peut être utile de modifier le texte du bouton afin que vous sachiez où vous mènera la sortie :) "
+
+#: settings/settings.php:200
+msgid "Exit Name"
+msgstr "Nom de sortie"
+
+#: settings/settings.php:195
+msgid "New Tab/Window"
+msgstr "Nouvel·le onglet/fenêtre"
+
+#: settings/settings.php:194
+msgid "Same Tab/Window"
+msgstr "Même onglet/fenêtre"
+
+#: settings/settings.php:190
+msgid "Select How the exit happens. Sometimes you might want to quickly pop into the Admin area without leaving the editor<br /> then setting the Exit Point to a new tab might be ideal for your work flow :)"
+msgstr "Sélectionnez comment la sortie se produit. Parfois, vous pourriez vouloir passer rapidement dans la zone d’administration sans quitter l’éditeur,<br /> définissez alors le point de sortie sur un nouvel onglet pourrait être idéal pour votre flux de travail :)"
+
+#: settings/settings.php:189
+msgid "Exit Target"
+msgstr "Cible de sortie"
+
+#: settings/settings.php:183
+msgid "Admin Dashboard"
+msgstr "Tableau de bord d’admin"
+
+#: settings/settings.php:182
+msgid "Library List"
+msgstr "Liste de la bibliothèque"
+
+#: settings/settings.php:181
+msgid "Posts List"
+msgstr "Liste des articles"
+
+#: settings/settings.php:180
+msgid "Pages List"
+msgstr "Liste des pages"
+
+#: settings/settings.php:179
+msgid "Edit Screen"
+msgstr "Écran de modification"
+
+#: settings/settings.php:175
+msgid "Select where to land when the Exit To Dashboard buttons is clicked - Default is the current post/page edit screen"
+msgstr "Sélectionnez où atterrir lorsque vous cliquez sur les boutons Quitter vers le tableau de bord - Par défaut, c’est l'écran de modification de l’article/page courante"
+
+#: settings/settings.php:174
+msgid "Exit Point"
+msgstr "Point de sortie"
+
+#: settings/settings.php:164
+msgid "Don't like having to go through too many hoops in order to exit the editor? There's a control for that - just enable to get a 1 exit option bar!"
+msgstr "Vous n'aimez pas devoir passer par trop d’étapes pour sortir de l’éditeur ? Il y a un contrôle pour cela - activez-le simplement pour obtenir une barre d’option de sortie directe !"
+
+#: settings/settings.php:163
+msgid "Enable Exit Bar"
+msgstr "Activer la barre de sortie"
+
+#: settings/settings.php:153
+msgid "Choose to load the Particles scripts and it's controls or not!"
+msgstr "Choisissez de charger ou non les scripts Particles et leurs contrôles !"
+
+#: settings/settings.php:142
+msgid "Choose to load the Parallax scripts and it's controls or not!"
+msgstr "Choisissez de charger ou non les scripts de parallaxe et leurs contrôles !"
+
+#: settings/settings.php:120
+msgid "Elementor - Hacking away at UI Frustrations #2 - Widget Panel By <a target=\"_blank\" href=\"https://www.facebook.com/profile.php?id=100011054383197\">David Beckwith</a>."
+msgstr "Elementor - Modification des frustrations de l’UI #2 - Panneau de widgets par <a target=\"_blank\" href=\"https://www.facebook.com/profile.php?id=100011054383197\">David Beckwith</a>."
+
+#: settings/settings.php:119
+msgid "Elementor UI Hack Widget Panel"
+msgstr "Panneau de modification UI de widget Elementor"
+
+#: settings/settings.php:114
+msgid "Grunge Red"
+msgstr "Rouge grunge"
+
+#: settings/settings.php:113
+msgid "Red"
+msgstr "Rouge"
+
+#: settings/settings.php:112
+msgid "Deep Purple"
+msgstr "Violet foncé"
+
+#: settings/settings.php:111
+msgid "Deep Blue"
+msgstr "Bleu profond"
+
+#: settings/settings.php:110
+msgid "Dark Grunge"
+msgstr "Grunge foncé"
+
+#: settings/settings.php:109
+msgid "Light Grunge"
+msgstr "Grunge clair"
+
+#: settings/settings.php:108
+msgid "Dark"
+msgstr "Foncé"
+
+#: settings/settings.php:107
+msgid "Default"
+msgstr "Par défaut"
+
+#: settings/settings.php:103
+msgid "Apply a custom color skin to the editor panel. Dark skin is by <a target=\"_blank\" href=\"https://www.facebook.com/AlexIschenko2016\">Alex Ischenko</a>"
+msgstr "Appliquer un habillage de couleur personnalisé au panneau de l’éditeur. L’habillage foncé est d’<a target=\"_blank\" href=\"https://www.facebook.com/AlexIschenko2016\">​​Alex Ischenko</a>"
+
+#: settings/settings.php:102
+msgid "Change Editor Color"
+msgstr "Modifier la couleur de l’éditeur"
+
+#: settings/settings.php:90
+msgid "Remove the Elementor's dashboard widget."
+msgstr "Retirer le widget de tableau de bord Elementor."
+
+#: settings/settings.php:89
+msgid "Remove Dashboard Widget"
+msgstr "Retirer le widget de tableau de bord"
+
+#: settings/settings.php:79
+msgid "Set all accordions' first tab to be closed on page load."
+msgstr "Définir que le premier onglet de tous les accordéons soit fermé au chargement de la page."
+
+#: settings/settings.php:78
+msgid "Accordions Closed?"
+msgstr "Accordéons fermés ?"
+
+#: settings/settings.php:69
+msgid "Select"
+msgstr "Sélectionner"
+
+#: settings/settings.php:54
+msgid "Advanced Settings"
+msgstr "Réglages avancés"
+
+#: settings/settings.php:50
+msgid "Editor Options"
+msgstr "Options de l’éditeur"
+
+#: settings/settings.php:46
+msgid "General Controls"
+msgstr "Contrôles généraux"
+
+#: settings/settings.php:35 settings/settings.php:36
+msgid "Granular Controls"
+msgstr "Granular Controls"
+
+#: settings/class.settings-api.php:366
+msgid "Choose File"
+msgstr "Choisir le fichier"
+
+#: plugin.php:137
+msgid "Elementor Controls Elements"
+msgstr "Elementor contrôle les éléments"
+
+#: modules/scheduled-content/module.php:93
+msgid "Set content display schedule end date!"
+msgstr "Définissez la date de fin de la planification d’affichage du contenu !"
+
+#: modules/scheduled-content/module.php:87
+msgid "End Date"
+msgstr "Date de fin"
+
+#: modules/scheduled-content/module.php:80
+msgid "Set content display schedule start date!"
+msgstr "Définissez la date de début de la planification d’affichage du contenu !"
+
+#: modules/scheduled-content/module.php:74
+msgid "Start Date"
+msgstr "Date de début"
+
+#: modules/scheduled-content/module.php:67
+msgid "Switch on to schedule the contents of this column|section!."
+msgstr "Commutez pour planifier le contenu de cette colonne|section !."
+
+#: modules/scheduled-content/module.php:61
+msgid "Schedule Content?"
+msgstr "Planifier le contenu ?"
+
+#: modules/scheduled-content/module.php:52
+msgid "These controls only affect the Column|Section they are attached to!"
+msgstr "Ces contrôles affectent uniquement la colonne|section à laquelle ils sont attachés !"
+
+#: modules/scheduled-content/module.php:44
+msgid "Schedule Content"
+msgstr "Planifier le contenu"
+
+#: modules/granular-particles/module.php:75
+msgid "Paste your particles JSON code here - Generate it from <a href=\"http://vincentgarreau.com/particles.js/#default\" target=\"_blank\">Here!</a>"
+msgstr "Collez votre code JSON Particles ici - Générez le <a href=\"http://vincentgarreau.com/particles.js/#default\" target=\"_blank\">ici!</a>"
+
+#: modules/granular-particles/module.php:70
+msgid "Particles JSON"
+msgstr "JSON de votre Particles"
+
+#: modules/granular-particles/module.php:63
+msgid "Set this equal to the set Minimum Height of your section - default is 400px!"
+msgstr "Définissez ceci égal à la hauteur minimale de votre section - par défaut 400px !"
+
+#: modules/granular-particles/module.php:58
+msgid "Height"
+msgstr "Hauteur"
+
+#: modules/granular-particles/module.php:51
+msgid "Switch on to enable & access Particles options! Note that currently particles are not visible in edit/preview mode & can only be viewed on the frontend."
+msgstr "Commutez pour accéder aux options de Particles ! Notez qu’actuellement Particles n’est pas visible en mode modification/prévisualisation et peut uniquement être vu sur l’interface publique."
+
+#: modules/granular-particles/module.php:45 settings/settings.php:152
+msgid "Enable Particles"
+msgstr "Activer Particles"
+
+#: modules/granular-parallax/module.php:155
+msgid "Enable support on iOs devices."
+msgstr "Activer le support pour les appareils iOs."
+
+#: modules/granular-parallax/module.php:145
+msgid "iOS Support"
+msgstr "Support iOs"
+
+#: modules/granular-parallax/module.php:138
+msgid "Enable support on Android devices."
+msgstr "Activer le support pour les appareils Android."
+
+#: modules/granular-parallax/module.php:133
+#: modules/granular-parallax/module.php:150
+msgid "Disable"
+msgstr "Désactiver"
+
+#: modules/granular-parallax/module.php:132
+#: modules/granular-parallax/module.php:149
+msgid "Enable"
+msgstr "Activer"
+
+#: modules/granular-parallax/module.php:128
+msgid "Android Support"
+msgstr "Support Android"
+
+#: modules/granular-parallax/module.php:116
+msgid "NOTICE: These options are untested and I would love to hear your feedback on them once you have tried them!"
+msgstr "Remarque : ces options n’ont pas été testées et nous aimerions recevoir vos retours lorsque vous les aurez essayées !"
+
+#: modules/granular-parallax/module.php:106
+msgid "This should be set between -1 to a max of 2 - Decimal points must be used for fine controls."
+msgstr "Doit être compris entre -1 et 2 max. - Les décimales doivent être utilisées pour des contrôles fins."
+
+#: modules/granular-parallax/module.php:103
+msgid "Speed"
+msgstr "Vitesse"
+
+#: modules/granular-parallax/module.php:91
+msgid "NOTICE: Speed has some caveats - the higher the speed the greater the zoom on the image. Negative speed values will also switch the direction of the movement on scroll!"
+msgstr "Remarque : l’option vitesse comporte certaines mises en garde - la vitesse présente quelques réserves - plus la vitesse est élevée, meilleur est le zoom sur l’image. Les valeurs de vitesse négatives vont également inverser la direction du mouvement au défilement !"
+
+#: modules/granular-parallax/module.php:84
+msgid "Set the Parallax type needed - default is Scroll effect."
+msgstr "Définir le type d’effet parallaxe nécessité - effet de défilement par défaut."
+
+#: modules/granular-parallax/module.php:79
+msgid "Scale + Opacity"
+msgstr "Redimensionnement + opacité"
+
+#: modules/granular-parallax/module.php:78
+msgid "Scale"
+msgstr "Redimensionnement"
+
+#: modules/granular-parallax/module.php:77
+msgid "Opacity"
+msgstr "Opacité"
+
+#: modules/granular-parallax/module.php:76
+msgid "Scroll + Opacity"
+msgstr "Défilement + opacité"
+
+#: modules/granular-parallax/module.php:75
+msgid "Scroll"
+msgstr "Défilement"
+
+#: modules/granular-parallax/module.php:71
+msgid "Type"
+msgstr "Type"
+
+#: modules/granular-parallax/module.php:64
+msgid "Enable to access extra controls."
+msgstr "Activez pour accéder aux contrôles supplémentaires."
+
+#: modules/granular-parallax/module.php:58 settings/settings.php:141
+msgid "Enable Parallax"
+msgstr "Activer le parallaxe"
+
+#: modules/granular-parallax/module.php:49
+msgid "NOTICE: Please note that using both Parallax & Particles together on the same section may have side effects - use with care!"
+msgstr "Remarque : veuillez noter que l’utilisation simultanée du parallaxe et de Particles sur la même section peut entraîner des effets imprévus - à utiliser avec précaution !"
+
+#: settings/settings.php:210
+msgid "View Live Page"
+msgstr "Voir la page en direct"
+
+#: settings/settings.php:203
+msgid "Exit To Dashboard"
+msgstr "Quitter vers le tableau de bord"
+
+#: modules/delayed-content/module.php:80
+msgid "Set delay time in in minutes i.e 1 for 1 minute or 0.20 (60*0.2) for 12 seconds - default is 0.50 (30 seconds)!"
+msgstr "Définir le délai en minutes, ex. 1 pour 1 minute ou 0,20 (60*0,2) pour 12 secondes - par défaut 0,50 (30 secondes) !"
+
+#: modules/delayed-content/module.php:74
+msgid "Delay Time"
+msgstr "Temporisation"
+
+#: modules/delayed-content/module.php:67
+msgid "Switch on to delay the contents of this column|section!."
+msgstr "Permutez pour différer l’affichage du contenu de cette colonne|section !"
+
+#: modules/delayed-content/module.php:61
+msgid "Delay Content?"
+msgstr "Différer l’affichage du contenu ?"
+
+#: modules/delayed-content/module.php:52
+msgid "These controls only affect the Column/Section they are attached to!"
+msgstr "Ces contrôles affectent uniquement la colonne/section à laquelle ils sont attachés !"
+
+#: modules/delayed-content/module.php:44
+msgid "Delayed Content"
+msgstr "Différer le contenu"
+
+#: includes/granular-functions.php:32
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: granular-controls-elementor.php:115
+msgid "A new version of Elementor is available. For better performance and compatibility of Elementor Custom Controls, we recommend updating to the latest version."
+msgstr "Une nouvelle version d’Elementor est disponible. Pour améliorer les performances et la compatibilité des contrôles personnalisés d’Elementor, nous vous recommandons de mettre à jour vers la dernière version."
+
+#: granular-controls-elementor.php:102 granular-controls-elementor.php:116
+msgid "Update Elementor Now"
+msgstr "Mettre à jour Elementor maintenant"
+
+#: granular-controls-elementor.php:101
+msgid "Granular Controls not working because you are using an old version of Elementor."
+msgstr "Granular Controls ne fonctionne pas, car vous utilisez une ancienne version d’Elementor."
+
+#: granular-controls-elementor.php:87
+msgid "Install Elementor Now"
+msgstr "Installer Elementor maintenant"
+
+#: granular-controls-elementor.php:86
+msgid "Granular Controls is not working because you need to install the Elementor plugin"
+msgstr "Granular Controls ne fonctionne pas, car vous devez installer l’extension Elementor"
+
+#: granular-controls-elementor.php:78
+msgid "Activate Elementor Now"
+msgstr "Activer Elementor maintenant"
+
+#: granular-controls-elementor.php:77
+msgid "Granular Controls not working because you need to activate the Elementor plugin."
+msgstr "Granular Controls ne fonctionne pas car vous devez activer l’extension Elementor."
+
+#: base/module-base.php:33 base/module-base.php:44 plugin.php:44 plugin.php:55
+msgid "Cheatin&#8217; huh?"
+msgstr "Une fausse manipulation ?"

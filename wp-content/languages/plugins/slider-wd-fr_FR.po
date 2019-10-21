@@ -1,0 +1,88 @@
+# Translation of Plugins - Slider by 10Web &#8211; Responsive Image Slider - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - Slider by 10Web &#8211; Responsive Image Slider - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-09-23 07:55:25+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Slider by 10Web &#8211; Responsive Image Slider - Stable (latest release)\n"
+
+#: frontend/views/WDSViewSlider.php:1780 frontend/views/WDSViewSlider.php:1894
+msgid "Pause"
+msgstr "Pause"
+
+#: frontend/views/WDSViewSlider.php:1812
+msgid "Play"
+msgstr "Lecture"
+
+#: frontend/views/WDSViewSlider.php:29
+msgid "There is no slider selected or the slider was deleted."
+msgstr "Aucun diaporama sélectionné ou il a été supprimé."
+
+#: frontend/views/WDSViewSlider.php:46
+msgid "There are no slides in this slider."
+msgstr "Il n'y a pas de panneau dans ce diaporama."
+
+#: sliders-notices.php:188
+msgid "Leave A Review?"
+msgstr "Laisser un avis ?"
+
+#: sliders-notices.php:189
+msgid "We hope you've enjoyed using WordPress %s! Would you consider leaving us a review on WordPress.org?"
+msgstr "Nous espérons que vous aimez utiliser WordPress %s ! Voudriez vous nous laisser votre avis sur WordPress.org ?"
+
+#: sliders-notices.php:190
+msgid "Sure! I'd love to!"
+msgstr "Oui ! J’aimerais ça !"
+
+#: sliders-notices.php:191
+msgid "I've already left a review"
+msgstr "J’ai déjà laissé un avis"
+
+#: sliders-notices.php:192
+msgid "Maybe Later"
+msgstr "Peut-être plus tard"
+
+#: sliders-notices.php:193 sliders-notices.php:203
+msgid "Never show again"
+msgstr "Ne plus afficher"
+
+#. Plugin URI of the plugin/theme
+msgid "https://web-dorado.com/products/wordpress-slider-plugin.html"
+msgstr "https://web-dorado.com/products/wordpress-slider-plugin.html"
+
+#. Author of the plugin/theme
+msgid "WebDorado"
+msgstr "WebDorado"
+
+#. Author URI of the plugin/theme
+msgid "https://web-dorado.com/"
+msgstr "https://web-dorado.com/"
+
+#: sliders-notices.php:200
+msgid "Thank you for using WordPress %s! We hope that you've found everything you need, but if you have any questions:"
+msgstr "Merci d’utiliser WordPress %s ! ?Nous espérons que vous avez trouvé ce que vous recherchiez, mais si vous avez des questions :"
+
+#: sliders-notices.php:201
+msgid "Check out User Guide"
+msgstr "Découvrez notre guide utilisateur"
+
+#: sliders-notices.php:202
+msgid "Get Some Help"
+msgstr "Obtenez de l’aide"
+
+#. Plugin Name of the plugin/theme
+msgid "Slider WD"
+msgstr "Slider WD"
+
+#. Description of the plugin/theme
+msgid "This is a responsive plugin, which allows adding sliders to your posts/pages and to custom location. It uses large number of transition effects and supports various types of layers."
+msgstr "Ceci est une extension responsive qui vous permet d’ajouter des diaporamas à vos articles / pages et dans des emplacements personnalisés. Il utilise un grand nombre d’effets de transition et supporte différents types de calques."
+
+#: sliders-notices.php:199
+msgid "Hey! How's It Going?"
+msgstr "Bonjour ! Comment allez vous ?"

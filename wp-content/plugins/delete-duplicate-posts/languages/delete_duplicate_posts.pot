@@ -1,0 +1,280 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Delete Duplicate Posts\n"
+"POT-Creation-Date: 2017-03-30 09:17-0400\n"
+"PO-Revision-Date: 2017-03-30 09:17-0400\n"
+"Last-Translator: Lars Koudal\n"
+"Language-Team: Lars Koudal\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: delete-duplicate-posts.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: delete-duplicate-posts.php:72
+msgid "Cron job running."
+msgstr ""
+
+#: delete-duplicate-posts.php:75
+msgid "Manually cleaning."
+msgstr ""
+
+#: delete-duplicate-posts.php:140
+#, php-format
+msgid "Error, problem deleting %s '%d' %s"
+msgstr ""
+
+#: delete-duplicate-posts.php:144
+#, php-format
+msgid "Deleted %s '%s' (id: %s) and related post meta data."
+msgstr ""
+
+#: delete-duplicate-posts.php:150
+#, php-format
+msgid "A total of %s duplicate posts were deleted."
+msgstr ""
+
+#: delete-duplicate-posts.php:161
+#, php-format
+msgid ""
+"Hi Admin, I have deleted <strong>%d</strong> posts on your blog, %s."
+"<br><br><em>You are receiving this e-mail because you have turned on e-mail "
+"notifications by the plugin, Delete Duplicate Posts.</em>"
+msgstr ""
+
+#: delete-duplicate-posts.php:165
+msgid "Deleted Duplicate Posts Status"
+msgstr ""
+
+#: delete-duplicate-posts.php:168
+#, php-format
+msgid "Status email sent to %s."
+msgstr ""
+
+#: delete-duplicate-posts.php:184
+msgid "Every 10 minutes"
+msgstr ""
+
+#: delete-duplicate-posts.php:188
+msgid "Every 15 minutes"
+msgstr ""
+
+#: delete-duplicate-posts.php:192
+msgid "Every 30 minutes"
+msgstr ""
+
+#: delete-duplicate-posts.php:239
+msgid "Plugin activated."
+msgstr ""
+
+#: delete-duplicate-posts.php:265 delete-duplicate-posts.php:484
+msgid "Settings"
+msgstr ""
+
+#: delete-duplicate-posts.php:277
+msgid "Usage and FAQ"
+msgstr ""
+
+#: delete-duplicate-posts.php:279
+msgid "What does this plugin do?"
+msgstr ""
+
+#: delete-duplicate-posts.php:280
+msgid ""
+"Helps you clean duplicate posts from your blog. The plugin checks for "
+"blogposts on your blog with the same title."
+msgstr ""
+
+#: delete-duplicate-posts.php:281
+msgid ""
+"It can run automatically via WordPress's own internal CRON-system, or you "
+"can run it automatically."
+msgstr ""
+
+#: delete-duplicate-posts.php:282
+msgid ""
+"It also has a nice feature that can send you an e-mail when Delete Duplicate "
+"Posts finds and deletes something (if you have turned on the CRON feature)."
+msgstr ""
+
+#: delete-duplicate-posts.php:283
+msgid "Help! Something was deleted that was not supposed to be deleted!"
+msgstr ""
+
+#: delete-duplicate-posts.php:284
+msgid ""
+"I am sorry for that, I can only recommend you restore the database you took "
+"just before you ran this plugin."
+msgstr ""
+
+#: delete-duplicate-posts.php:285
+msgid ""
+"If you run this plugin, manually or automatically, it is at your OWN risk!"
+msgstr ""
+
+#: delete-duplicate-posts.php:286
+msgid ""
+"I have done my best to avoid deleting something that should not be deleted, "
+"but if it happens, there is nothing I can do to help you."
+msgstr ""
+
+#: delete-duplicate-posts.php:307 delete-duplicate-posts.php:346
+msgid "Whoops! Some error occured, try again, please!"
+msgstr ""
+
+#: delete-duplicate-posts.php:314
+msgid ""
+"Whoops! There was a problem with the data you posted. Please go back and try "
+"again."
+msgstr ""
+
+#: delete-duplicate-posts.php:341
+msgid "Your changes were successfully saved."
+msgstr ""
+
+#: delete-duplicate-posts.php:350
+msgid "The log was cleared."
+msgstr ""
+
+#: delete-duplicate-posts.php:427
+#, php-format
+msgid "I have discovered %d duplicate posts"
+msgstr ""
+
+#: delete-duplicate-posts.php:434
+msgid "ID"
+msgstr ""
+
+#: delete-duplicate-posts.php:435
+msgid "Title"
+msgstr ""
+
+#: delete-duplicate-posts.php:436
+msgid "Post Type"
+msgstr ""
+
+#: delete-duplicate-posts.php:454
+msgid ""
+"We recommend you always make a backup before running this tool. Changes are "
+"permanent!"
+msgstr ""
+
+#: delete-duplicate-posts.php:457
+msgid "Delete all duplicates"
+msgstr ""
+
+#: delete-duplicate-posts.php:466
+msgid "I have just checked, and you have no duplicate posts."
+msgstr ""
+
+#: delete-duplicate-posts.php:471
+msgid ""
+"You have enabled CRON, so I am running on automatic. I will take care of "
+"everything..."
+msgstr ""
+
+#: delete-duplicate-posts.php:474
+#, php-format
+msgid "Next automated check %s. Current time %s"
+msgstr ""
+
+#: delete-duplicate-posts.php:491
+msgid "Which post types?:"
+msgstr ""
+
+#: delete-duplicate-posts.php:532
+msgid "Enable automatic deletion?:"
+msgstr ""
+
+#: delete-duplicate-posts.php:533
+msgid "Clean duplicates automatically. Runs every hour."
+msgstr ""
+
+#: delete-duplicate-posts.php:539
+msgid "How often?:"
+msgstr ""
+
+#: delete-duplicate-posts.php:553
+msgid "How often should the cron job run?"
+msgstr ""
+
+#: delete-duplicate-posts.php:559
+msgid "Delete which posts?:"
+msgstr ""
+
+#: delete-duplicate-posts.php:562
+msgid "Keep oldest post"
+msgstr ""
+
+#: delete-duplicate-posts.php:563
+msgid "Keep latest post"
+msgstr ""
+
+#: delete-duplicate-posts.php:567
+msgid ""
+"Keep the oldest or the latest version of duplicates? Default is keeping the "
+"oldest, and deleting any subsequent duplicate posts"
+msgstr ""
+
+#: delete-duplicate-posts.php:571
+msgid "Send status mail?:"
+msgstr ""
+
+#: delete-duplicate-posts.php:572
+msgid "Sends a status email if duplicates have been found."
+msgstr ""
+
+#: delete-duplicate-posts.php:576
+msgid "Delete at maximum :"
+msgstr ""
+
+#: delete-duplicate-posts.php:586
+msgid "duplicates."
+msgstr ""
+
+#: delete-duplicate-posts.php:587
+msgid ""
+"Setting a limit is a good idea, especially if your site is on a busy server."
+msgstr ""
+
+#: delete-duplicate-posts.php:590
+msgid "Save Settings"
+msgstr ""
+
+#: delete-duplicate-posts.php:601
+msgid "The Log"
+msgstr ""
+
+#: delete-duplicate-posts.php:617
+msgid "Reset log"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Delete Duplicate Posts"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://cleverplugins.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Remove duplicate blogposts on your blog! Searches and removes duplicate "
+"posts and their post meta tags. You can delete posts, pages and other Custom "
+"Post Types enabled on your website."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "cleverplugins.com"
+msgstr ""

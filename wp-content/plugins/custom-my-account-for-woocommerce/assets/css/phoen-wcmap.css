@@ -1,0 +1,65 @@
+.phoen-wcmap{margin:0; padding:0;}
+.phoen-wcmap * {margin:0; padding:0; box-sizing:border-box;}
+.phoen-wcmap-row{margin:0 -15px;}
+.phoen-myaccount-menu{width:30%; float:left; padding:0 15px;box-sizing:border-box;}
+.phoen-myaccount-menu .myaccount-menu i {padding: 0 8px;}
+.phoen-myaccount-menu .myaccount-menu{margin:0; padding:0;}
+.phoen-myaccount-menu .myaccount-menu li{list-style:none; padding:10px 0; border:1px solid #ccc; margin:0; border-bottom: 0 none;}
+.phoen-myaccount-menu .myaccount-menu li:last-child{border-bottom:1px solid #ccc;}
+.phoen-myaccount-menu .myaccount-menu li a{text-decoration:none;}
+.phoen-myaccount-content{width:70%;float:right;padding:0 15px;box-sizing:border-box;}
+
+.pho-user-profile { margin-bottom: 25px;}
+.pho-user-info .pho-logout {background: #c0c0c0; color: #fff; display: inline-block; margin-top: 10px; padding: 2px 10px;
+text-decoration: none; text-transform: uppercase;}
+.pho-user-info .pho-logout:hover {background: #373736; color: #fff;}
+
+.form-table h3, .form-table th {
+	padding-left: 10px;
+}
+
+/*---responsive---*/
+@media (max-width:767px){
+	.phoen-myaccount-menu{width:100%; margin-bottom:15px;}
+	.phoen-myaccount-content{width:100%;}
+}
+
+.phoen-endpoint-container .ui-sortable li{padding:10px 15px;}
+
+.pho-popup-myaccount{width:315px; height:250px; background-color:#fff; box-shadow:0 0 10px rgba(0, 0, 0, 0.08);  padding:3px 10px; position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); transform: -webkit-translate(-50%, -50%); text-align:center;}
+
+.pho-popup-myaccount h3 {margin-top: 36px;}
+
+
+.pho-popup-myaccount .pho-para  p {text-align:center; font-family:'Roboto', sans-serif; font-size:13px; color:#6a7b84; margin:10 auto; }
+.pho-popup-myaccount .pho-separator { border: 1px solid #a4aeb4; margin: 5px auto 15px; width: 25px;}
+.pho-popup-myaccount .pho-pincode {margin:10px 0; text-align:left;}
+
+
+.pho-popup-myaccount input {border: 1px solid #dbdbdb; box-shadow:0 none; font-size:14px;  max-width:238px; width: 100%; color: #363636;display: inline-block; vertical-align: middle; padding:5px 10px;}
+.pho-popup-myaccount .pho-submit_btn {background:#737373; width:auto; color:#ffffff; height:34px; font-family:'Roboto', sans-serif; font-size:12px; font-weight:300; letter-spacing:0.5; cursor:pointer; float:right; margin:1px 0 0 0; border: 0 none;}
+.pho-popup-myaccount form {padding-bottom:16px;}
+.pho-popup-myaccount .pho-select_div { border: 1px solid #dbdbdb; box-shadow:0 none; font-size:12px; height:32px; max-width:260px; width: 100%;display: inline-block; padding:5px 10px; color:#929292;}
+.pho-popup-myaccount .pho-option-form {width:366px; margin:0 auto;}
+
+.pho-modal-box-backdrop {
+    background:#000000;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+	opacity:0.8;
+}
+
+.pho-myaccount-popup-body{
+	bottom: 0;
+	display:block;
+    left: 0;
+    outline: 0 none;
+    overflow-y: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}

@@ -1,0 +1,480 @@
+# Copyright (C) 2014 the WordPress team
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPB WooCommerce Products Slider\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/twentyfifteen\n"
+"POT-Creation-Date: 2017-07-04 14:17+0600\n"
+"PO-Revision-Date: 2017-07-04 14:17+0600\n"
+"Last-Translator: wpbean <imranmodel35@gmail.com>\n"
+"Language-Team: WpBean <imranmodel35@gmail.com>\n"
+"Language: en_AS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.7.1\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html__\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: inc\n"
+"X-Poedit-SearchPath-1: admin\n"
+"X-Poedit-SearchPath-2: admin/settings\n"
+
+#: admin/admin-page.php:20
+msgid "Welcome"
+msgstr ""
+
+#: admin/admin-page.php:21
+msgid "How to use"
+msgstr ""
+
+#: admin/admin-page.php:22
+msgid "ShortCodes"
+msgstr ""
+
+#: admin/admin-page.php:23
+msgid "ShortCode Parameters"
+msgstr ""
+
+#: admin/admin-page.php:27
+msgid "WPB WooCommerce Products Slider - "
+msgstr ""
+
+#: admin/admin-page.php:39
+msgid "How to use:"
+msgstr ""
+
+#: admin/admin-page.php:48
+msgid "ShortCode:"
+msgstr ""
+
+#: admin/admin-page.php:63
+msgid "ShortCode Parameters:"
+msgstr ""
+
+#: admin/admin-page.php:95
+msgid ""
+"For getting updates of our plugins, features update, WordPress new trend, "
+"New web technology etc. Follows Us."
+msgstr ""
+
+#: admin/admin-page.php:96
+msgid "Follow Us On Twitter"
+msgstr ""
+
+#: admin/admin-page.php:97
+msgid "Follow Us On Google Plus"
+msgstr ""
+
+#: admin/admin-page.php:98
+msgid "Like Us On FaceBook"
+msgstr ""
+
+#: admin/admin-page.php:99
+msgid "Subscribe Us on YouTube"
+msgstr ""
+
+#: admin/admin-page.php:100
+msgid "Get Support"
+msgstr ""
+
+#: admin/settings/class.settings-api.php:368
+msgid "Choose File"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:36
+#: admin/settings/wpb-wps-settings.php:37
+msgid "Settings"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:48
+msgid "General Settings"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:52
+msgid "Slider Settings"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:56
+msgid "Style Settings"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:72
+msgid "Number of Products"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:73
+msgid "Number of Product to show in slider. Default 12."
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:79
+msgid "Product Type"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:80
+msgid "Select product type for slider."
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:84 inc/wpb-wps-widgets.php:1
+msgid "Latest Products"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:85 inc/wpb-wps-widgets.php:1
+msgid "Featured Products"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:86
+msgid "Category Products"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:87
+msgid "Tag Products"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:88
+msgid "Products From ID"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:93
+msgid "Product Orderby"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:94
+msgid "Select product orderby for slider. Default: Date."
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:98 inc/wpb-wps-widgets.php:1
+msgid "None"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:99 inc/wpb-wps-widgets.php:1
+msgid "Date"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:100 inc/wpb-wps-widgets.php:1
+msgid "ID"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:101 inc/wpb-wps-widgets.php:1
+msgid "Author"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:102 inc/wpb-wps-widgets.php:1
+msgid "Title"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:103 inc/wpb-wps-widgets.php:1
+msgid "Name"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:104 inc/wpb-wps-widgets.php:1
+msgid "Rand"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:105
+msgid "Menu Order"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:106
+msgid "Modified"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:111
+msgid "Product Order"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:112
+msgid "Select product order for slider. Default: DESC."
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:116
+msgid "ASC"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:117
+msgid "DESC"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:122
+msgid "Slider Theme"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:123
+msgid "Select a theme for slider."
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:127 inc/wpb-wps-widgets.php:1
+msgid "Theme Hover Effect"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:128 inc/wpb-wps-widgets.php:1
+msgid "Theme Box"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:133
+msgid "Show Product Review in Slider"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:134
+#: admin/settings/wpb-wps-settings.php:140
+#: admin/settings/wpb-wps-settings.php:147
+#: admin/settings/wpb-wps-settings.php:206
+#: admin/settings/wpb-wps-settings.php:213
+#: admin/settings/wpb-wps-settings.php:220
+#: admin/settings/wpb-wps-settings.php:227
+msgid "Yes Please!"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:139
+msgid "Show Product Price in Slider"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:146
+msgid "Show Add to Cart button in Slider"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:153
+msgid "Product Categories"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:154 inc/wpb-wps-widgets.php:1
+msgid "Comma separated product category ids."
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:155
+#: admin/settings/wpb-wps-settings.php:162
+#: admin/settings/wpb-wps-settings.php:169
+msgid "20,23,27"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:160
+msgid "Product Tags"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:161 inc/wpb-wps-widgets.php:1
+msgid "Comma separated product tag ids."
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:167
+msgid "Product IDs"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:168
+msgid "Comma separated product ids."
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:177
+msgid "Number of Column"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:178
+msgid "Slider number of columns in large screen. Default: 4"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:184
+msgid "Number of Columns Small Desktop"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:185
+msgid "Slider number of columns in small desktop. Default: 3"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:191
+msgid "Number of Columns Tablet"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:192
+msgid "Slider number of columns in tablet. Default: 2"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:198
+msgid "Number of Columns Mobile"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:199
+msgid "Slider number of columns in mobile. Default: 1"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:205
+msgid "Slider Auto Play"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:212
+msgid "Slider Loop"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:219
+msgid "Slider Navigation"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:226
+msgid "Slider Pagination"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:235
+msgid "Primary Color"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:241
+msgid "Primary Color Dark"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:247
+msgid "Primary Color Light"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:253
+msgid "Secondary Color"
+msgstr ""
+
+#: admin/settings/wpb-wps-settings.php:259
+msgid "Secondary Color Light"
+msgstr ""
+
+#: inc/wpb-wps-functions.php:134
+msgid "PRO Version Features:"
+msgstr ""
+
+#: inc/wpb-wps-functions.php:136
+msgid "Six different newly designed themes for slider."
+msgstr ""
+
+#: inc/wpb-wps-functions.php:137
+msgid "Include or exclude product category / tag."
+msgstr ""
+
+#: inc/wpb-wps-functions.php:138
+msgid "Product slider form selected product SKU."
+msgstr ""
+
+#: inc/wpb-wps-functions.php:139
+msgid "Product slider form on sell products."
+msgstr ""
+
+#: inc/wpb-wps-functions.php:140
+msgid "Product slider form selected products attribute."
+msgstr ""
+
+#: inc/wpb-wps-functions.php:141
+msgid "Product slider form best selling products."
+msgstr ""
+
+#: inc/wpb-wps-functions.php:142
+msgid "Remove out of stock products form slider."
+msgstr ""
+
+#: inc/wpb-wps-functions.php:143
+msgid "Advance shortcode generator. No more writing shortcodes."
+msgstr ""
+
+#: inc/wpb-wps-functions.php:144
+msgid "YITH WooCommerce quick view, compare and wish list plugins support."
+msgstr ""
+
+#: inc/wpb-wps-functions.php:145
+msgid "Visual Composer Custom Element."
+msgstr ""
+
+#: inc/wpb-wps-functions.php:149
+msgid "Get The Pro Version"
+msgstr ""
+
+#: inc/wpb-wps-functions.php:150
+msgid "Pro Version Demo"
+msgstr ""
+
+#: inc/wpb-wps-functions.php:165
+msgid "WPB WooCommerce Products Slider"
+msgstr ""
+
+#: inc/wpb-wps-functions.php:166
+msgid "Woo Slider"
+msgstr ""
+
+#: inc/wpb-wps-shortcodes.php:144
+msgid "Awaiting product image"
+msgstr ""
+
+#: inc/wpb-wps-shortcodes.php:177
+msgid "No Products Found"
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "WPB WooCommerce Product Slider"
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "Dispay WooCommerce products slider."
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "Title:"
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "Number of Products:"
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "Slider Navigation. Default On."
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "Slider Pagination. Default On."
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "Product Slider Type:"
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "By Product Categories"
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "By Product Tags"
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "By Product IDs"
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "Slider Theme:"
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "Product Categories:"
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "Product Tags:"
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "Product IDs:"
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "Comma separated product ID's."
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "Products Orderby:"
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "Menu order"
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "Products order:"
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "Ascending"
+msgstr ""
+
+#: inc/wpb-wps-widgets.php:1
+msgid "Descending"
+msgstr ""

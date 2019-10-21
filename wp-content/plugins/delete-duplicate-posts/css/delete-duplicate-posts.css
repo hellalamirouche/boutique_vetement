@@ -1,0 +1,27 @@
+.statusdiv {
+	background-color: #ffffff;
+	padding: .8em;
+	clear: both;
+
+}
+
+.tools_page_delete-duplicate-posts .updated {
+	clear: both;
+}
+
+.statusdiv h3 {
+	text-align: center;
+}
+
+.statusdiv .warning {
+	border: 1px solid #ff0000;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+}
+
+.statusdiv .center {
+	text-align: center;
+}
